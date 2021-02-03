@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include tariocherp *.css
+recursive-include tariocherp *.csv
+recursive-include tariocherp *.html
+recursive-include tariocherp *.ico
+recursive-include tariocherp *.js
+recursive-include tariocherp *.json
+recursive-include tariocherp *.md
+recursive-include tariocherp *.png
+recursive-include tariocherp *.py
+recursive-include tariocherp *.svg
+recursive-include tariocherp *.txt
+recursive-exclude tariocherp *.pyc
