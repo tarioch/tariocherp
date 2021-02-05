@@ -6,12 +6,19 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "zyklus"
+  "cycle",
+  "services"
  ],
  "fields": [
   {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Service"
+  },
+  {
    "allow_in_quick_entry": 1,
-   "fieldname": "zyklus",
+   "fieldname": "cycle",
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "Zyklus",
@@ -21,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-03 16:53:48.601273",
+ "modified": "2021-02-05 20:56:15.829110",
  "modified_by": "Administrator",
  "module": "TariochErp",
  "name": "ServiceCycle",
