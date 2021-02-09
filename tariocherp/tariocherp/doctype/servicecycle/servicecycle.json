@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "cycle",
-  "services"
+  "services",
+  "asset"
  ],
  "fields": [
   {
@@ -24,11 +25,17 @@
    "label": "Zyklus",
    "non_negative": 1,
    "reqd": 1
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "label": "Asset",
+   "options": "Asset"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-05 20:56:15.829110",
+ "modified": "2021-02-09 20:39:31.324342",
  "modified_by": "Administrator",
  "module": "TariochErp",
  "name": "ServiceCycle",

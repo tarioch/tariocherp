@@ -48,7 +48,7 @@ def execute(filters=None):
 			'name': cycle.name,
 			'cycle': cycle.cycle,
 			'lastService': lastService,
-			'yearsToNextService': yearsSinceService - cycle.cycle,
+			'yearsToNextService': cycle.cycle - yearsSinceService,
 		})
 
 	return columns, data

@@ -6,7 +6,9 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "date"
+  "date",
+  "supplier",
+  "purchaseorder"
  ],
  "fields": [
   {
@@ -15,12 +17,26 @@
    "in_list_view": 1,
    "label": "Datum",
    "reqd": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Firma",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "purchaseorder",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Rechnung",
+   "options": "Purchase Invoice"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-02-05 20:55:02.028713",
+ "modified": "2021-02-09 20:38:27.431896",
  "modified_by": "Administrator",
  "module": "TariochErp",
  "name": "Service",
