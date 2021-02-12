@@ -3,10 +3,10 @@
   {
    "hidden": 0,
    "label": "Geb\u00e4ude",
-   "links": "[\n    {\n        \"description\": \"Service Zyklen\",\n        \"label\": \"Service Zyklen\",\n        \"name\": \"ServiceCyle\",\n        \"type\": \"doctype\"\n    }\n]"
+   "links": "[\n    {\n        \"description\": \"Service Zyklen\",\n        \"label\": \"Service Zyklen\",\n        \"name\": \"ServiceCycle\",\n        \"type\": \"doctype\"\n    }\n]"
   }
  ],
- "cards_label": "",
+ "cards_label": "Geb\u00e4udeliste",
  "category": "Domains",
  "charts": [],
  "creation": "2021-02-07 20:07:38.821474",
@@ -20,7 +20,7 @@
  "is_default": 0,
  "is_standard": 1,
  "label": "Geb\u00e4udeverwaltung",
- "modified": "2021-02-09 19:41:20.329749",
+ "modified": "2021-02-12 21:51:13.150722",
  "modified_by": "Administrator",
  "module": "TariochErp",
  "name": "Geb\u00e4udeverwaltung",
