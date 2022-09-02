@@ -6,7 +6,6 @@ import frappe
 from dateutil.relativedelta import relativedelta
 import datetime
 
-
 def execute(filters=None):
 	columns = [{
 		"fieldname": "name",
@@ -33,16 +32,23 @@ def execute(filters=None):
 	cycles = frappe.get_list('ServiceCycle',
 		fields=['name', 'cycle'],
 	)
-	services = frappe.get_list('Service',
-		fields=['parent', 'date'],
-	)
 
 	data = []
 	for cycle in cycles:
-		lastService = max([s.date for s in services if s.parent == cycle.name])
-		yearsSinceService = None
-		if lastService:
-			yearsSinceService = relativedelta(datetime.date.today(), lastService).years
+		lastServices = frappe.get_all('Service',
+			fields = ['date'],
+			filters = [
+				["parent","=", cycle.name]
+			],
+			order_by = 'date desc',
+			page_length = 1,
+		)
+
+		lastService = None
+		yearsSinceService = cycle.cycle
+		if lastServices:
+			lastService = lastServices[0]
+			yearsSinceService = relativedelta(datetime.date.today(), lastService.date).years
 
 		data.append({
 			'name': cycle.name,
