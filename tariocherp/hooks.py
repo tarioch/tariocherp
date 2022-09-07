@@ -143,3 +143,8 @@ app_license = "MIT"
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
 
+jinja  = {
+	"methods": [
+		"tariocherp.jinja.qrbill.generate_qrbill",
+	]
+}
